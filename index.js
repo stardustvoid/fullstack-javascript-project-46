@@ -1,3 +1,3 @@
-import parse from './src/parse.js';
+import gendiff from './src/gendiff.js';
 
-export default parse;
+export default gendiff;

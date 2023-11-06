@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import parse from '../src/parse.js';
+import gendiff from '../src/gendiff.js';
 
 const program = new Command();
 
@@ -10,6 +10,6 @@ program
   .version('1.0.1')
   .option('-f, --format <type>', 'output format')
   .arguments('<filepath1> <filepath2>')
-  .action(parse);
+  .action(gendiff);
 
 program.parse();
